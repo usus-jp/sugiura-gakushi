@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="杉浦岳志（がくし）のプロフィール・経歴がひと目で分かる1ページ。" />
+  <meta name="theme-color" content="#111827" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="杉浦岳志（がくし）プロフィール" />
+  <meta property="og:description" content="経歴がひと目で分かる1ページ。" />
+
+  <title>杉浦岳志（がくし）プロフィール</title>
+
+  <style>
+    :root{
+      --bg:#ffffff;
+      --text:#0f172a;
+      --muted:#64748b;
+      --line:#e2e8f0;
+      --card:#f8fafc;
+      --shadow: 0 12px 26px rgba(2,6,23,.08);
+      --radius: 16px;
+      --max: 960px;
+    }
+
+    *{ box-sizing:border-box; }
+
+    html{ scroll-behavior:smooth; }
+
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", "Yu Gothic", "Meiryo", sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.85;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    a{
+      color:inherit;
+      text-decoration-thickness:1px;
+      text-underline-offset:3px;
+    }
+
+    .wrap{
+      max-width:var(--max);
+      margin:0 auto;
+      padding: 28px 18px 72px;
+    }
+
+    /* Top */
+    header{
+      padding: 18px 0 10px;
+    }
+
+    .title{
+      font-size: clamp(26px, 3.3vw, 40px);
+      letter-spacing:.02em;
+      margin: 0 0 6px;
+    }
+
+    .subtitle{
+      margin:0 0 14px;
+      color:var(--muted);
+      font-size: 14px;
+    }
+
+    /* Sticky nav */
+    nav{
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255,255,255,.88);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav-inner{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 10px 18px;
+      display:flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items:center;
+    }
+
+    .chip{
+      display:inline-block;
+      padding: 7px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      text-decoration:none;
+      font-size: 13px;
+      color: var(--text);
+      background:#fff;
+      transition: background .15s ease, transform .15s ease;
+      will-change: transform;
+    }
+
+    .chip:hover{
+      background: var(--card);
+      transform: translateY(-1px);
+    }
+
+    /* Timeline */
+    .timeline{
+      margin-top: 18px;
+      border-left: 3px solid var(--line);
+      padding-left: 16px;
+      display: grid;
+      gap: 18px;
+    }
+
+    .card{
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px 16px 16px;
+      position: relative;
+    }
+
+    .card::before{
+      content:"";
+      position:absolute;
+      left: -28px;
+      top: 18px;
+      width: 14px;
+      height: 14px;
+      border-radius: 999px;
+      background: #111827;
+      border: 4px solid #fff;
+      box-shadow: 0 0 0 2px var(--line);
+    }
+
+    .card h2{
+      margin: 0 0 10px;
+      font-size: 18px;
+      letter-spacing:.01em;
+    }
+
+    .card p{
+      margin: 10px 0 0;
+    }
+
+    /* Images */
+    .gallery{
+      margin-top: 14px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .gallery.one{
+      grid-template-columns: 1fr;
+    }
+
+    figure{ margin: 0; }
+
+    img{
+      width: 100%;
+      height: auto;
+      display:block;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      background:#fff;
+    }
+
+    footer{
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 720px){
+      .gallery{ grid-template-columns: 1fr; }
+      .timeline{ padding-left: 12px; }
+      .card::before{ left: -24px; }
+    }
+  </style>
+</head>
+
+<body>
+  <nav aria-label="ページ内ナビゲーション">
+    <div class="nav-inner">
+      <a class="chip" href="#intro">トップ</a>
+      <a class="chip" href="#childhood">幼少期〜小学校</a>
+      <a class="chip" href="#school">中学校〜高校</a>
+      <a class="chip" href="#univ">大学</a>
+      <a class="chip" href="#work">社会人</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <header id="intro">
+      <h1 class="title">杉浦岳志（がくし）プロフィール</h1>
+      <p class="subtitle">経歴がひと目で分かる1ページ</p>
+    </header>
+
+    <section class="timeline" aria-label="経歴">
+      <article class="card" id="childhood">
+        <h2>幼少期〜小学校</h2>
+
+        <div class="gallery one">
+          <figure>
+            <img src="かつおー_子ども時代.jpg.png" alt="幼少期の写真" loading="lazy" />
+          </figure>
+        </div>
+
+        <p>
+          小学校3年生まで富福寺で育ち、その後西荻窪に引っ越しました。小学校は桃井第四小学校。<br />
+          放課後は少年野球団、Dancin'Festa 舞踏組（地域のダンスチーム）、日本舞踊（藤間流）、ビックKテニススクールなど
+          地域の大人に見守られながら様々な興味のあることをやらせてもらいました。<br />
+          井草八幡宮のお祭りが一年で一番の楽しみだったのを覚えています。
+        </p>
+      </article>
+
+      <article class="card" id="school">
+        <h2>中学校〜高校</h2>
+
+        <div class="gallery">
+          <figure>
+            <img src="高校テニスしてる写真.jpg" alt="高校時代のテニスの写真" loading="lazy" />
+          </figure>
+          <figure>
+            <img src="トニー.jpg.png" alt="トイプードルのトニーの写真" loading="lazy" />
+          </figure>
+        </div>
+
+        <p>
+          井荻中学校でテニス部に入ってから、中学校・高校はテニス漬けの生活でした。<br />
+          成蹊高校では厳しい指導を受けながら、テニスも人間性も成長した5年間となりました。<br />
+          受験期には当時飼っていたトイプードルのトニーに癒されながら勉強をしていました。
+        </p>
+      </article>
+
+      <article class="card" id="univ">
+        <h2>大学</h2>
+
+        <div class="gallery">
+          <figure>
+            <img src="S__58908680.jpg.png" alt="大学時代の写真（留学先など）" loading="lazy" />
+          </figure>
+          <figure>
+            <img src="ミャンマー.jpg.png" alt="海外での活動の写真（ミャンマー）" loading="lazy" />
+          </figure>
+        </div>
+
+        <p>
+          筑波大学人間学群教育学類に入学。<br />
+          サークルでテニスをしつつ、アルバイトでテニスコーチをして、引き続きテニス漬けの生活。
+          学内サークルの団体戦、関東国公立大学の団体戦などに向けて練習をしていました。<br />
+          サークル引退後はドイツのルートヴィヒマクシミリアン大学ミュンヘンへ一年間の留学。
+          当初は英語もドイツ語も全然できない状態でしたが、沢山の友人に恵まれて、帰国後に英検2級・独検準1級を受かるまで語学力が伸びました。<br />
+          ドイツ留学中に難民問題や途上国の教育に関心を持ち、イギリスの大学院で「開発学×教育」を専攻する修士課程に進学する予定でしたが、
+          直前で縁があり、衆議院議員岸田文雄事務所で働くことを選択しました。
+        </p>
+      </article>
+
+      <article class="card" id="work">
+        <h2>社会人</h2>
+
+        <div class="gallery">
+          <figure>
+            <img src="S__58900487.jpg.png" alt="衆議院議員事務所での写真" loading="lazy" />
+          </figure>
+          <figure>
+            <img src="まつださん勉強会.jpg.png" alt="勉強会の写真" loading="lazy" />
+          </figure>
+        </div>
+
+        <p>
+          知人の紹介で、衆議院議員岸田文雄事務所に秘書として入所。<br />
+          岸田文雄を近くで支えながら、政策の勉強を進めつつ、国政選挙7回・自民党総裁選挙2回を含む多くの選挙を経験しました。
+          また、勉強や官僚、起業家、民間企業で働く友人たちと定期的に勉強会や懇親会も行っていました。<br />
+          社会課題の解決にビジネス側から関わる経験を積みたいと思い、2025年9月からは介護事業のDXに取り組む「善光総合研究所」に参画しています。<br />
+          （webサイト：<a href="https://zenkou-lab.co.jp/" target="_blank" rel="noopener noreferrer">善光総合研究所</a>）
+        </p>
+      </article>
+    </section>
+
+    <footer>
+      <div>このページはGitHub Pages公開を前提に、HTML1枚（CSS込み）で作成しています。</div>
+    </footer>
+  </main>
+</body>
+</html>
+
+
